@@ -116,6 +116,11 @@ export const getDefaultAppState = (): Omit<
     objectsSnapModeEnabled: false,
     userToFollow: null,
     followedBy: new Set(),
+    customFonts: {
+      normal: null,
+      handwriting: null,
+      code: null,
+    },
   };
 };
 
@@ -236,6 +241,7 @@ const APP_STATE_STORAGE_CONF = (<
   objectsSnapModeEnabled: { browser: true, export: false, server: false },
   userToFollow: { browser: false, export: false, server: false },
   followedBy: { browser: false, export: false, server: false },
+  customFonts: { browser: true, export: true, server: false },
 });
 
 const _clearAppStateForStorage = <

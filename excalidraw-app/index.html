@@ -59,7 +59,15 @@
       name="description"
       content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S278JJ4NPZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-S278JJ4NPZ');
+    </script>
     <!------------------------------------------------------------------------->
     <!--   to minimize white flash on load when user has dark mode enabled   -->
     <script>
@@ -176,6 +184,20 @@
     <!-- Excalidraw version -->
     <meta name="version" content="{version}" />
 
+    <link
+      rel="preload"
+      href="/Virgil.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/Cascadia.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <% if (typeof VITE_APP_DEV_DISABLE_LIVE_RELOAD != 'undefined' &&
     VITE_APP_DEV_DISABLE_LIVE_RELOAD == true) { %>
     <script>

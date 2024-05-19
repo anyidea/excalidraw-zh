@@ -185,6 +185,7 @@ const shareableLinkConfirmDialog = {
   color: "danger",
 } as const;
 
+// hulk
 const initializeScene = async (opts: {
   collabAPI: CollabAPI | null;
   excalidrawAPI: ExcalidrawImperativeAPI;
